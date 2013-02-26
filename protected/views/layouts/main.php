@@ -49,21 +49,41 @@
                         <h3>Social life</h3>
                         <div class="row-fluid">
                             <img src="<?php echo Yii::app()->request->baseUrl; ?>/images/ccink_twitter.png" width="40" alt="Twitter"/>
-                            <small class="tweet">Test</small>
+                            <small class="tweet"><?php echo CHtml::link('EsĒduPelmeņus', 'https://twitter.com/EsEduPelmenus', array('target'=>'_blank')); ?></small>
                         </div>
                         <div class="row-fluid">
                             <img src="<?php echo Yii::app()->request->baseUrl; ?>/images/facebook.png" width="40" alt="Facebook" />
-                            <small class="facebook">Test2</small>
+                            <small class="facebook"><?php echo CHtml::link('Daniels Pitkevičs', 'http://www.facebook.com/xfr33', array('target'=>'_blank')); ?></small>
+                        </div>
+                        <div class="row-fluid">
+                            <img src="<?php echo Yii::app()->request->baseUrl; ?>/images/draugiem.png" width="40" alt="Draugiem" />
+                            <small class="draugiem"><?php echo CHtml::link('Daniels Pitkevičs', 'http://www.draugiem.lv/user/114121/', array('target'=>'_blank')); ?></small>
                         </div>
                     </div>
                     <div class="span3 footer-box">
                         <h3>Working On</h3>
                         <div class="row-fluid">
-                            <small>We dont have any partners yet. <a href="#">Become one!</a></small>
+                            <small>Add new entry in Working On section: <?php echo CHtml::link('Offer a Project', '#contacts'); ?></small>
+                        </div>
+                        <div class="row-fluid">
+                            <ul class="list-view">
+                                <?php foreach ($this->workingOnItems as $workingOnItem): ?>
+                                <li><small><?php echo $workingOnItem->title; ?></small></li>
+                                <?php endforeach; ?>
+                            </ul>
                         </div>
                     </div>
                     <div class="span3 footer-box">
-                        <h3>Wishlist</h3>
+                        <h3>Legal Information</h3>
+                        <div class="row-fluid">
+                            <small><?php echo Yii::powered(); ?></small>
+                        </div>
+                        <div class="row-fluid">
+                            <small>Developed by Daniels Pitkevičs</small>
+                        </div>
+                        <div class="row-fluid">
+                            <small>All rights reserved, 2013 - <?php echo date('Y'); ?></small>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -91,6 +111,7 @@
     <?php echo $content; ?>
     <?php $this->endContent(); ?><!-- #contacts -->
     
+    
     <?php $cs = Yii::app()->getClientScript(); 
     $cs->registerCoreScript('jquery.ui'); 
     $cs->registerScriptFile(Yii::app()->request->baseUrl . '/js/bootstrap.min.js'); 
@@ -99,7 +120,6 @@
     $cs->registerScriptFile(Yii::app()->request->baseUrl . '/js/jquery.contentcarousel.js'); ?>
     <script>
         $(function () {
-            
             $('#ca-container').contentcarousel({
                 scroll:false
             });
@@ -156,6 +176,6 @@
             }
         }
     </script>
-
+    
 </body>
 </html>

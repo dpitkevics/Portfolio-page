@@ -12,7 +12,8 @@
                     <object data="<?php echo Yii::app()->request->baseUrl; ?>/external/cv.pdf" 
                            width="100%" 
                            height="500px"
-                           type="application/pdf">
+                           type="application/pdf"
+                           class="images-polaroid">
                         <p>Sorry, PDF file failed to open! Please contact administrator.</p>
                     </object>
                     

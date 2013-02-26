@@ -82,7 +82,13 @@
                     <div class="row-fluid">
                         
                         <div class="span6 buttons">
-                            <?php echo CHtml::submitButton('Submit'); ?>
+                            <?php echo CHtml::htmlButton('<i class="icon-ok-circle"></i>Send Me', array(
+                                'type' => 'submit',
+                                'class' => 'btn-primary',
+                            )); ?>
+                            <?php /* echo CHtml::submitButton('<i class="icon-user"></i>Submit', array(
+                                'class' => 'btn-primary'
+                            )); */ ?>
                         </div>
                         
                     </div>

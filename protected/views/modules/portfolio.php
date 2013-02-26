@@ -14,7 +14,7 @@
                     <?php $c++; ?>
 					<div class="ca-item ca-item-<?php echo $c; ?>">
 						<div class="ca-item-main">
-							<div class="ca-icon images-circle"></div>
+							<div class="ca-icon images-circle" style="background:#fff url(<?php echo Yii::app()->request->baseUrl . $item->image_source; ?>) no-repeat center center;background-size: contain;"></div>
 							<h3><?php echo $item->title; ?></h3>
 							<h4>
 								<?php echo $item->description; ?>

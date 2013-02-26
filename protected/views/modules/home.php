@@ -9,8 +9,8 @@
 
                     <div class="row-fluid">
                         <div class="center title">
-                            <h2>
-                                Daniels Pitkevics
+                            <h2 style="font-family: sans-serif;">
+                                Daniels Pitkevičs
                             </h2>
                             <small><em>Building colors with web sites</em></small>
                         </div>
@@ -18,7 +18,7 @@
 
                     <div class="row-fluid">
                         <div class="center logo">
-                            <img src="<?php echo Yii::app()->request->baseUrl; ?>/images/design.png" alt="logo" />
+                            <img src="<?php echo Yii::app()->request->baseUrl; ?>/images/Web.png" alt="logo" />
                         </div>
                     </div>
 

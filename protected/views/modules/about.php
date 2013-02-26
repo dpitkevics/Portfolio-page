@@ -7,6 +7,10 @@
                 
                 <h2>About Me</h2>
                 
+                <div class="image">
+                    <img src="<?php echo Yii::app()->request->baseUrl; ?>/images/dp-profile.jpg" alt="Profile" class="images-polaroid" />
+                </div>
+                
                 <div class="text">
                     <p>My name is, Daniels! Main profession - programmer, more specific - web programmer. Doing that since 2006.</p>
                     <p>Professional experience is since the January of 2012. Have been working on different projects - business and personal.</p>

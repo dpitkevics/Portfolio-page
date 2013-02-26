@@ -1,5 +1,13 @@
 body {
     background: #FF8300;
+    color: #fff;
+}
+
+a {
+    color: #aacfb1;
+}
+a:hover {
+    color: #65a873;
 }
 
 .btn-red {
@@ -125,6 +133,7 @@ body {
     -moz-border-radius: 4px;
     background: rgba(255, 0, 0, 0.3);
     text-align: left;
+    padding: 5px;
 }
 .footer-box h3 {
     text-align: center;
@@ -367,8 +376,8 @@ body {
 	position:relative;
 	margin:0 auto;
 	background:transparent url(http://useqna.com/images/demo.png?1306361119) no-repeat center center;
-    background-size: 100% 100%;
-    border: solid 1pt;
+    background-size: contain;
+    border: solid 1pt;   
 }
 .ca-item-2 .ca-icon{
 	background-image:url(../images/animal2.png);
@@ -393,9 +402,7 @@ body {
 }
 .ca-item h3{
 	font-family: 'Coustard', sans-serif;
-	text-transform:uppercase;
 	font-size:30px;
-	color:#000;
 	margin-bottom:20px;
 	text-align:center;
 }
@@ -448,9 +455,7 @@ body {
 	margin:25px 20px 0px 35px;
 	font-size:32px;
 	padding-bottom:5px;
-	color:#000;
 	font-family: 'Coustard', sans-serif;
-	color:#000;
 	border-bottom:2px solid hsl(274, 100%, 30%);
 }
 .ca-content ul{
@@ -519,13 +524,13 @@ body {
 .modal-close {
     position: relative;
     left: 95%;
-    top: 10px;
-    width: 21px;
-    height: 21px;
+    top: 2%;
+    width: 40px;
+    height: 40px;
 }
 .modal-close img {
-    width: 21px;
-    height: 21px;
+    width: 40px;
+    height: 40px;
 }
 .iframe {
     width: 100%;
@@ -539,4 +544,34 @@ body {
 }
 .modal-title {
     text-align: center;
+}
+
+.image {
+    width: 125px;
+    height: 125px;
+    float: right;
+    margin: 5px;
+}
+.image img {
+    width: 100%;
+    height: 100%;
+}
+button i {
+    margin-right: 7px;
+}
+button {
+    padding: 5px 10px;
+}
+
+.page-loader {
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -100px 0 0 -150px;
+}
+
+.modal-white {
+    background: #fff;
 }

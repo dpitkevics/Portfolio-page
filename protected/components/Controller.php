@@ -22,10 +22,17 @@ class Controller extends CController
 	public $breadcrumbs=array();
     
     public $portfolioItems=array();
+    public $workingOnItems=array();
     
     protected function beforeAction($action) {
         $portfolioItems = PortfolioItem::model()->findAll();
         $this->portfolioItems = $portfolioItems;
+        
+        $criteria = new CDbCriteria();
+        $criteria->limit = 3;
+        $criteria->order = 'timestamp DESC';
+        $workingOnItems = WorkingOnItem::model()->findAll($criteria);
+        $this->workingOnItems = $workingOnItems;
         
         return true;
     }
